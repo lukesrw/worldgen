@@ -63,16 +63,18 @@ Each `"name"` should match that of a given `"perlin"` name above.
 ```json
 {
     "gates": {
-        "name": {
-            "cla": 0.5, // if a given noise value is over this value, the colours are used
-            "modify": true, // if true, the pixel is changed by these values - rather than set to them
-            "check": true, // if true, the existing pixel must have an alpha value prior to being overwritten/modified
-            "preset": "grass", // to use built-in preset colours
-            "red": 255, // red value to apply/modify by
-            "green": 0, // green value to apply/modify by
-            "blue": 0, // blue value to apply/modify by
-            "alpha": 255 // alpha value to apply/modify by
-        }
+        "name": [
+            {
+                "cla": 0.5, // if a given noise value is over this value, the colours are used
+                "modify": true, // if true, the pixel is changed by these values - rather than set to them
+                "check": true, // if true, the existing pixel must have an alpha value prior to being overwritten/modified
+                "preset": "grass", // to use built-in preset colours
+                "red": 255, // red value to apply/modify by
+                "green": 0, // green value to apply/modify by
+                "blue": 0, // blue value to apply/modify by
+                "alpha": 255 // alpha value to apply/modify by
+            }
+        ]
     }
 }
 ```
