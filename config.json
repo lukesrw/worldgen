@@ -1,0 +1,132 @@
+{
+    "image": {
+        "size": {
+            "width": 1024,
+            "height": 1024,
+            "circle": false,
+            "space": false
+        },
+        "sun": {
+            "x": 512,
+            "y": 512
+        },
+        "offset": {
+            "x": 0,
+            "y": 0
+        }
+    },
+    "perlin": {
+        "grass-beach": {
+            "method": "pn",
+            "oct": 8,
+            "amp": 0.01,
+            "per": 0.5
+        },
+        "grass": {
+            "method": "pn",
+            "oct": 8,
+            "amp": 0.01,
+            "per": 0.5
+        },
+        "sand": {
+            "method": "pn",
+            "oct": 8,
+            "amp": 0.01,
+            "per": 0.5
+        },
+        "stone": {
+            "method": "pn",
+            "oct": 8,
+            "amp": 0.01,
+            "per": 0.5
+        },
+        "darken": {
+            "method": "pn",
+            "oct": 8,
+            "amp": 0.01,
+            "per": 0.5
+        }
+    },
+    "gates": {
+        "grass-beach": [
+            {
+                "cla": 0.55,
+                "preset": "grass"
+            },
+            {
+                "cla": 0.54,
+                "preset": "sand"
+            },
+            {
+                "cla": 0.51,
+                "modify": true,
+                "red": 10,
+                "green": 10,
+                "blue": 10
+            }
+        ],
+        "grass": [
+            {
+                "cla": 0.45,
+                "check": true,
+                "preset": "grass"
+            }
+        ],
+        "sand": [
+            {
+                "cla": 0.71,
+                "check": true,
+                "red": 219,
+                "green": 177,
+                "blue": 135,
+                "alpha": 235
+            },
+            {
+                "cla": 0.68,
+                "check": true,
+                "preset": "sand"
+            }
+        ],
+        "stone": [
+            {
+                "cla": 0.85,
+                "red": 246,
+                "green": 252,
+                "blue": 255,
+                "alpha": 255
+            },
+            {
+                "check": true,
+                "cla": 0.8,
+                "red": 159,
+                "green": 165,
+                "blue": 168,
+                "alpha": 255
+            },
+            {
+                "check": true,
+                "cla": 0.7,
+                "red": 109,
+                "green": 115,
+                "blue": 118,
+                "alpha": 255
+            }
+        ],
+        "darken": [
+            {
+                "cla": 0.6,
+                "modify": true,
+                "red": -10,
+                "green": -10,
+                "blue": -10
+            },
+            {
+                "cla": 0.3,
+                "modify": true,
+                "red": -5,
+                "green": -5,
+                "blue": -5
+            }
+        ]
+    }
+}
