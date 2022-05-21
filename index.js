@@ -165,7 +165,7 @@ async function generate() {
                 }
 
                 // apply water to areas without colour
-                if (a === 0) {
+                if (a < 255) {
                     r += 70;
                     g += 88;
                     b += 186;
